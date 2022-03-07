@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+	<link href="stylesheets/mainstyle.css" rel="stylesheet" type="text/css">
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "testpassword") {
+    return true;
+   }
+   alert("Wrong password, please try again.");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">Welcome to My Website!&nbsp;</p>
+ <p>Please enter the password to view this website.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+	<center>
+ <a href="Front page.html" onclick="return checkPassword();">
+ Click here to submit password
+</a>
+</center>
+</body>
+</html>
